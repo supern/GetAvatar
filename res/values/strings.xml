@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_menu_pick">选择本地图片</string>
+    <string name="dialog_menu_capture">拍照</string>
+    <string name="dialog_title_set_avatar">设置头像</string>
+    <string name="cancle">取消</string>
+    <string name="select">选择</string>
+    <string name="app_name">GetAvatar</string>
+</resources>

@@ -103,12 +103,14 @@ public class GetAvatarActivity extends Activity implements OnClickListener {
 				Intent intent = new Intent();
 				intent.putExtra(EXTRA_DATA, url);
 				setResult(RESULT_OK, intent);
+	            mCropImageView.recycle();
 				finish();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		} else {
 			setResult(RESULT_CANCELED);
+			mCropImageView.recycle();
 			finish();
 		}
 	}
@@ -131,6 +133,7 @@ public class GetAvatarActivity extends Activity implements OnClickListener {
 			}
 		}else{
 			setResult(RESULT_CANCELED);
+            mCropImageView.recycle();
 			finish();
 		}
 	}

@@ -103,6 +103,7 @@ public class CropImageView extends FrameLayout implements OnGestureListener,
 	}
 
 	public void setBitmap(Bitmap bitmap) {
+	    if(bitmap==null)return;
 		mBitmap = bitmap;
 		mWidth = bitmap.getWidth();
 		mHeight = bitmap.getHeight();
